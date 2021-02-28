@@ -6,6 +6,7 @@ import ThemeContext ,{themes}from '../theme-context';
 
 //import ThemeContext,  from '../theme-context';
 import Layout from '../layout';
+import { SearchForm } from './SearchForm';
 
 const Header = () =>{
     const [theme,setTheme]  = useState(themes.dark);
@@ -15,11 +16,11 @@ const Header = () =>{
 <Navbar style={theme}>
         <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
         <Navbar.Toggle />
+        <SearchForm></SearchForm>
         
-        <button onClick={toggleTheme}>Change theme</button>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            Signed in as: <a href="#login">Mark Otto</a>
+          <button onClick={toggleTheme}>Change theme</button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>

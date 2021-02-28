@@ -6,7 +6,7 @@ import {
   searchMovie,
   fetchMovies,
   setLoading
-} from '../../actions/searchActions';
+} from '../actions/searchActions';
 
 export class SearchForm extends Component {
   onChange = e => {
