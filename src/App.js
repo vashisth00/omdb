@@ -7,15 +7,8 @@ import Layout from './layout';
 import Header from './components/Header.js';
 
 function App() {
-  const [theme,setTheme]  = useState(themes.dark);
-  const toggleTheme = ()=>theme ===themes.dark? setTheme(themes.light) : setTheme(themes.dark);
-  return(
- 
-  <ThemeContext.Provider value={theme}>
-     <button onClick={toggleTheme}>Change theme</button>
-       <Header/>
-<Layout />
-</ThemeContext.Provider>
+ return(
+ <Header></Header>
   );
 }
 
