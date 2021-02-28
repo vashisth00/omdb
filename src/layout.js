@@ -3,9 +3,10 @@ import ThemeContext from './theme-context';
 
 
 const Layout = () =>{
-    const themes  = useContext(ThemeContext);
-    return
-     <div>Hi this is </div>;
-    }
+    const theme  = useContext(ThemeContext);
+    return(
+     <div style={theme}>Hi this is </div>
+    );
+    };
 
 export default Layout; 
