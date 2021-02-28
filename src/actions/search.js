@@ -1,4 +1,4 @@
-import { SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING } from './types';
+import { SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING } from './type';
 import axios from 'axios';
 
 import { APIKey } from '../OMBD';
